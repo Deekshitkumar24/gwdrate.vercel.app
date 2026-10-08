@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@source "./**/*.{js,ts,jsx,tsx,mdx}";
+@source "../app/**/*.{js,ts,jsx,tsx,mdx}";
+@source "../components/**/*.{js,ts,jsx,tsx,mdx}";
+
+/* ============================================================
+   GWD — GET WORK DONE
+   Team Rating Platform Theme
+   ============================================================ */
+
+:root {
+  --background: #0b0507;
+  --foreground: #f5f5f7;
+  --ns-muted: #4d4d4d;
+  --ns-accent: #ff2e3f;
+  --brand-red: #C41E1E;
+}
+
+.dark {
+  --ns-muted: #8f8f8f;
+}
+
+/* Multi-tone soft red smoke variables for DyeWhorl and UI atmosphere */
+.dye-red {
+  --background: #0b0507; /* near-black space */
+  --border: #2e080f;     /* subtle darker smoke veil */
+  --ns-muted: #8c1622;    /* deep red smoke body */
+  --foreground: #e02838;  /* crimson / bright red core */
+  --ns-accent: #f87171;   /* soft light red / coral-rose wisps */
+}
+
+/* Calm multi-tone soft red smoke fallback for reduced-motion or non-WebGL */
+.dye-fallback {
+  background:
+    radial-gradient(ellipse 65% 55% at 50% 25%, rgba(224, 40, 56, 0.12) 0%, rgba(140, 22, 34, 0.08) 35%, rgba(46, 8, 15, 0.05) 60%, transparent 80%),
+    radial-gradient(circle at 80% 80%, rgba(248, 113, 113, 0.06) 0%, rgba(46, 8, 15, 0.04) 50%, transparent 75%),
+    #0b0507;
+}
+
+html, body {
+  background-color: #0b0507;
+  color: #f5f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom styled scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0507;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b0c13;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #731320;
+}
